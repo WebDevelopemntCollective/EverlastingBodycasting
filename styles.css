@@ -308,7 +308,7 @@ select {
 	-ms-appearance: none;
     -o-appearance: none;
     appearance: none;
-    background-image: url('../images/down-arrow.png');
+    background-image: url('down-arrow.png');
     background-position: 96% 50%;
     background-repeat: no-repeat;
     outline: none;
@@ -989,7 +989,7 @@ a.back-to-top {
 	width: 42px;
 	height: 42px;
 	border-radius: 30px;
-	background: #ffd700 url("../images/up-arrow.png") no-repeat center 47%;
+	background: #ffd700 url("up-arrow.png") no-repeat center 47%;
 	background-size: 18px 18px;
 	text-indent: -9999px;
 }
@@ -1385,18 +1385,21 @@ img {
 	position: relative;
   }
   
+  .image-slider {
+	text-align: center;
+	position: relative;
+  }
+  
   .slider-container {
 	position: relative;
 	width: 100%;
-	max-width: 800px; /* Adjust max-width as needed */
+	max-width: 800px;
 	margin: 0 auto;
-	height: 400px; /* Adjust height as needed */
+	height: 400px;
   }
   
   .slide {
-	position: absolute;
-	top: 0;
-	left: 0;
+	position: relative;
 	width: 100%;
 	height: 100%;
 	display: none;
@@ -1409,14 +1412,8 @@ img {
   }
   
   .slide p {
-	position: absolute;
-	bottom: 10px;
-	left: 0;
-	right: 0;
 	text-align: center;
-	background-color: gold; /* Semi-transparent black background */
-	color: rgb(0, 0, 0);
-	padding: 10px;
+	margin-top: 10px; /* Adjust the margin as needed */
   }
   
   .slide:first-child {
@@ -1426,26 +1423,7 @@ img {
   .dots-container {
 	display: flex;
 	justify-content: center;
-	margin-top: 10px;
-  }
-  
-  .dot {
-	width: 10px;
-	height: 10px;
-	border-radius: 50%;
-	background-color: black;
-	margin: 0 5px;
-	cursor: pointer;
-  }
-  
-  .dot.active {
-	background-color: gold;
-  }
-  
-  .dots-container {
-	display: flex;
-	justify-content: center;
-	margin-top: 10px;
+	margin-top: 70px; /* Increased margin-top */
   }
   
   .dot {

@@ -1,21 +1,19 @@
 const sliderContainer = document.querySelector('.slider-container');
-const images = sliderContainer.querySelectorAll('img');
+const slides = sliderContainer.querySelectorAll('.slide');
 const dotsContainer = document.querySelector('.dots-container');
 const dots = dotsContainer.querySelectorAll('.dot');
 let slideIndex = 0;
 
-
-
 function showSlide(n) {
-  images.forEach((image) => {
-    image.style.display = 'none';
+  slides.forEach((slide) => {
+    slide.style.display = 'none';
   });
   dots.forEach((dot) => {
     dot.classList.remove('active');
   });
 
-  slideIndex = (n + images.length) % images.length;
-  images[slideIndex].style.display = 'block';
+  slideIndex = (n + slides.length) % slides.length;
+  slides[slideIndex].style.display = 'block';
   dots[slideIndex].classList.add('active');
 }
 
@@ -36,4 +34,3 @@ dots.forEach((dot, index) => {
     showSlide(index);
   });
 });
-
