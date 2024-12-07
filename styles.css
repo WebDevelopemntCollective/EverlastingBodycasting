@@ -558,7 +558,7 @@ input[type='checkbox'] {
 }
 
 .header .wave {
-	background: url('../images/wave.svg') repeat-x; 
+	background: url('wave.svg') repeat-x; 
 	position: absolute;
 	top: -190px;
 	width: 6400px;
